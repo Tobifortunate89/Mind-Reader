@@ -1,0 +1,324 @@
+#Create a program that will read the user's mind after they answer a sequence of questions.
+
+
+#Title
+print("Reading Your Mind")
+print()
+
+#meet the player
+name = input("Hello! What is your name? > ")
+
+print("Hi " + name.title(), "Let's play a game!")
+
+#Start by asking the user to pick a number between 1-10.
+print()
+
+num = (input("Pick a number between 1 and 10. > "))
+
+attemptInt = 0
+attemptStr = 0
+
+
+#make sure the user can only input int numbers between 1 and 10
+while True:
+  if num.isnumeric():
+    num = int(num)
+    attemptInt += 1
+    
+    if num > 10:
+      num = input("Too High. Try again. > ")
+
+    elif num < 1:
+      num = input("Too Low. Try again. > ")
+  
+    else:
+      print("Now multiply that number by 9")
+      break
+      
+  else:
+    attemptStr +=1
+    print("Soory, that is not a number.")
+    num = (input("Pick a number between 1 and 10. > "))
+
+print()
+
+#Help the user do math
+print("Loading Calculator...")
+import time
+
+
+attempt = 0
+
+while attempt < 1:
+    timer = 3
+    
+    while timer > 0:
+        print(timer, "...")
+        time.sleep(1)
+        timer = timer - 1
+    
+    attempt = attempt + 1
+
+print("Let's do math!")
+
+def add(num1,num2):
+    answer = num1 + num2
+    return answer
+
+def subtract(num1,num2):
+    answer = num1 - num2
+    return answer
+
+def multiply(num1,num2):
+    answer = num1 * num2
+    return answer
+
+def divide(num1,num2):
+    answer = num1 // num2
+    return answer
+
+first = int(input("Enter your first number: "))
+second = int(input("Enter your second number: "))
+
+print("Choose an option: (1) Add, (2) Subtract, (3) Divide, (4) Multiply")
+choice= int(input())
+
+if choice == 1:
+    answer = add(first,second)
+
+if choice == 2:
+    answer = subtract(first, second)
+  
+if choice == 3:
+    answer = divide(first, second)
+
+if choice == 4:
+    answer = multiply(first, second)
+  
+print(answer)
+
+print()
+    
+# if result of multtply is a two digit number, add those two didgits otherwise, if result is one digit number then add 0.
+print()
+
+print("If you now have a two digit number, add those two digits. Otherwise, if you now have a one digit number, add 0.")
+
+print()
+
+print("Loading Calculator...")
+import time
+
+
+attempt = 0
+
+while attempt < 1:
+    timer = 3
+    
+    while timer > 0:
+        print(timer, "...")
+        time.sleep(1)
+        timer = timer - 1
+    
+    attempt = attempt + 1
+
+print("Let's do math...")
+
+print()
+
+def add(num1,num2):
+    answer = num1 + num2
+    return answer
+
+def subtract(num1,num2):
+    answer = num1 - num2
+    return answer
+
+def multiply(num1,num2):
+    answer = num1 * num2
+    return answer
+
+def divide(num1,num2):
+    answer = num1 // num2
+    return answer
+
+first = int(input("Enter your first number: "))
+second = int(input("Enter your second number: "))
+
+print("Choose an option: (1) Add, (2) Subtract, (3) Divide, (4) Multiply")
+choice= int(input())
+
+if choice == 1:
+    answer = add(first,second)
+
+if choice == 2:
+    answer = subtract(first, second)
+  
+if choice == 3:
+    answer = divide(first, second)
+
+if choice == 4:
+    answer = multiply(first, second)
+  
+print(answer)
+
+print()
+
+# Tell user to subtract 5 from the new reult. No calculator this time.
+print()
+
+print("Do these next steps in your head. Subtract 5 from your new number.")
+print()
+print("Thinking...")
+import time
+
+
+attempt = 0
+
+while attempt < 1:
+    timer = 3
+    
+    while timer > 0:
+        print(timer, "...")
+        time.sleep(1)
+        timer = timer - 1
+    
+    attempt = attempt + 1
+
+print("Next Step")
+print()
+
+new_num = input("Is your number 4? type 'yes' or 'no': > ")
+
+if new_num == ("no"):
+  print("HMMM, Try the Calculator...Loading Calculator...")
+  import time
+
+
+  attempt = 0
+
+  while attempt < 1:
+    timer = 3
+    
+    while timer > 0:
+        print(timer, "...")
+        time.sleep(1)
+        timer = timer - 1
+    
+    attempt = attempt + 1
+
+  print("Let's do math...")
+
+  print()
+
+  def add(num1,num2):
+    answer = num1 + num2
+    return answer
+
+  def subtract(num1,num2):
+    answer = num1 - num2
+    return answer
+
+  def multiply(num1,num2):
+    answer = num1 * num2
+    return answer
+
+  def divide(num1,num2):
+    answer = num1 // num2
+    return answer
+
+  first = int(input("Enter your first number: "))
+  second = int(input("Enter your second number: "))
+
+  print("Choose an option: (1) Add, (2) Subtract, (3) Divide, (4) Multiply")
+  choice= int(input())
+
+  if choice == 1:
+    answer = add(first,second)
+
+  if choice == 2:
+    answer = subtract(first, second)
+  
+  if choice == 3:
+    answer = divide(first, second)
+
+  if choice == 4:
+    answer = multiply(first, second)
+  
+  print("See? Your number is", answer)
+  print()
+  print()
+  enter = input("press ENTER to continue.  > ")
+  print("Now think of the letter that corresponds with that number. For example, 1 is A, 2 is B, 3 is C, 4 is D, 5 is E, etc...")
+#User should then chose the letter in the alphabet that corresponds with that number.
+elif new_num == ("yes"):
+  print()
+  print()
+  print("Now think of the letter that corresponds with that number. For example, 1 is A, 2 is B, 3 is C, 4 is D, 5 is E, etc...")
+  print()
+
+import random
+  
+enter = input("press ENTER to continue.  > ")
+
+#User should chose country that starts with letter
+print()
+country = ["Denmark", "Djibouti", "Dominica", "Dominican Republic"]
+print("Next, think of a country that starts with that letter")
+print()
+print()
+#user should choose animal that starts with last letter of country
+
+enter = input("press ENTER to continue.  > ")
+
+animal = ["Kangaroo", "Koala", "Killer Whale", "Kookaburra", "Kiwi", "kite", "King Cobra"]
+print()
+print()
+print("Next, think of an animal that starts with the last letter of that country")
+print()
+print()
+enter = input("press ENTER to continue.  > ")
+print()
+print()
+#user should choose fruit that starts with last letter of animal
+print("Next, think of a fruit that starts with the last letter of that animal")
+print()
+print()
+enter = input("press ENTER to continue.  > ")
+print()
+print()
+#guess the user's thoughts. If guess is wrong, then guess other combinations from list
+guess = input("Orange Kangaroo from Denmark huh? 'yes' or 'no'? > ")
+if guess == ("yes"):
+  print()
+  print()
+  print("Thank You For Playing!")
+  print()
+  print()
+elif guess == ("no"):
+  print()
+  print()
+  guess_2 = input("Hmmm, it's gotta be an Apple Koala from Denmark. 'yes' or 'no'? > ")
+if guess_2 == ("yes"):
+  print()
+  print()
+  print("Thank You For Playing!")
+  print()
+  print()
+elif guess_2 == ("no"):
+  print()
+  print()
+  print("This is my last try.")
+  print()
+  print()
+  guess_3 = input("You are thinking of a Tangerine Cat from the Dominican Republic. 'yes' or 'no'? > ")
+if guess_3 == ("yes"):
+  print()
+  print()
+  print("Whew, thanks for playing!")
+  print()
+  print()
+elif guess_3 == ("no"):
+  print()
+  print()
+  print("Aww, you broke me.")
